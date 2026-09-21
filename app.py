@@ -27,7 +27,7 @@ def init_db():
     """)
     conn.commit()
     conn.close()
- init_db() 
+init_db() 
 def cache_key(city=None, lat=None, lon=None):
     """Build a cache key from city name or coordinates."""
     if city:
