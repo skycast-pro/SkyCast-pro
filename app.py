@@ -1,5 +1,5 @@
 """
-SkyCast Pro - Private Weather Forecasting Application
+SkyCast Pro - Private Weatherdef init_db Forecasting Application
 Install : pip install flask requests
 Run     : python app.py
 Server  : http://localhost:5000
@@ -27,7 +27,7 @@ def init_db():
     """)
     conn.commit()
     conn.close()
-
+ init_db() 
 def cache_key(city=None, lat=None, lon=None):
     """Build a cache key from city name or coordinates."""
     if city:
